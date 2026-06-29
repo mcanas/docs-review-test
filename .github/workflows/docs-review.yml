@@ -1,0 +1,21 @@
+name: Deploy Docs Review
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "projects/**/docs/**"
+      - "docs-review.config.yml"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    uses: mcanas/docs-review/.github/workflows/reusable-deploy.yml@main
+    with:
+      config_path: docs-review.config.yml
+    secrets:
+      OAUTH_CLIENT_ID: ${{ secrets.DOCS_REVIEW_OAUTH_CLIENT_ID }}
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
