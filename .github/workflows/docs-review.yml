@@ -19,3 +19,4 @@ jobs:
       contents: write
       pages: write
       id-token: write
+      discussions: write
