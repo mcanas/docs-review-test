@@ -12,9 +12,9 @@ jobs:
   deploy:
     uses: mcanas/docs-review/.github/workflows/reusable-deploy.yml@main
     with:
-      config_path: docs-review.config.yml
+      config-path: docs-review.config.yml
     secrets:
-      OAUTH_CLIENT_ID: ${{ secrets.DOCS_REVIEW_OAUTH_CLIENT_ID }}
+      client-id: ${{ secrets.DOCS_REVIEW_OAUTH_CLIENT_ID }}
     permissions:
       contents: write
       pages: write
