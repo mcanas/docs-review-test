@@ -2,9 +2,9 @@ projects:
   - name: todo-app
     label: "Todo App"
     description: "Task management platform built on GitHub Issues"
-    docs_path: projects/todo-app/docs
+    path: projects/todo-app/docs
 
   - name: weather-app
     label: "Weather App"
     description: "Hyperlocal weather dashboard with severe weather alerts"
-    docs_path: projects/weather-app/docs
+    path: projects/weather-app/docs
