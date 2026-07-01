@@ -14,7 +14,7 @@ jobs:
     with:
       config-path: docs-review.config.yml
     secrets:
-      client-id: ${{ secrets.DOCS_REVIEW_OAUTH_CLIENT_ID }}
+      read-token: ${{ secrets.DOCS_REVIEW_READ_TOKEN }}
     permissions:
       contents: write
       pages: write
